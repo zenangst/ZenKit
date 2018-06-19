@@ -1,0 +1,16 @@
+PODS:
+  - ZenKit (0.1.0)
+
+DEPENDENCIES:
+  - ZenKit (from `../../`)
+
+EXTERNAL SOURCES:
+  ZenKit:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  ZenKit: b578e0c98901a8236b5bc96e82a965e0c8f3d14d
+
+PODFILE CHECKSUM: 62342cfb217d11fc7a72908f357ebc532aa89c1b
+
+COCOAPODS: 1.5.3
