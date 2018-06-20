@@ -27,29 +27,41 @@ public class DequeueController: NSObject {
     return dequeueView(of: type, frame: frame, closure)
   }
 
-  public func dequeueView(of type: View.Type,
+  @discardableResult
+  public func prepare<T: View>(types: T.Type ...) {
+    let container = View()
+    for type in types {
+      let dequeuedView = dequeueView(of: type, frame: .init(origin: .zero, size: .init(width: 50, height: 50)))
+      container.addSubview(dequeuedView)
+    }
+    container.subviews.forEach { $0.removeFromSuperview() }
+  }
+
+  @discardableResult
+  public func dequeueView<T: View>(of type: T.Type,
                           frame: CGRect = .zero,
-                          _ closure: ((View.Type) -> View)? = nil) -> View
+                          _ closure: ((T.Type) -> T)? = nil) -> T
   {
     var offset = 0
-    var identifier = "\(type)"
+    var identifier = "\(type)-\(offset)"
     var dequeuingDone = false
-    var cachedView: View?
+    var cachedView: T?
 
     while !dequeuingDone {
-      dequeueView(&identifier, &cachedView, &dequeuingDone, type, &offset)
+      _dequeueView(&identifier, &cachedView, &dequeuingDone, type, &offset)
     }
 
     if let cachedView = cachedView {
       return cachedView
     }
 
-    let view: View
+    let view: T
     if let closure = closure {
       view = closure(type)
     } else {
       view = type.init(frame: frame)
     }
+
     viewCache.setObject(view, forKey: identifier as NSString)
     return view
   }
@@ -84,18 +96,19 @@ public class DequeueController: NSObject {
     } else {
       controller = type.init()
     }
+
     controllerCache.setObject(controller, forKey: identifier as NSString)
     return controller
   }
 
-  private func dequeueView<T: View>(_ identifier: inout String, _ cachedView: inout T?, _ dequeuingDone: inout Bool, _ type: T.Type, _ offset: inout Int) {
+  private func _dequeueView<T: View>(_ identifier: inout String, _ cachedView: inout T?, _ dequeuingDone: inout Bool, _ type: T.Type, _ offset: inout Int) {
     if let view = viewCache.object(forKey: identifier as NSString) as? T {
       if view.superview == nil {
         cachedView = view
         dequeuingDone = view.superview == nil
       }
-      identifier = "\(type)-\(offset)"
       offset += 1
+      identifier = "\(type)-\(offset)"
     } else {
       dequeuingDone = true
     }
