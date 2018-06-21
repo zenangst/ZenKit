@@ -1,8 +1,22 @@
 import XCTest
 import ZenKit
 
-class RecyclerTests: XCTestCase {
-  class MockView: View {}
+class DequeueTests: XCTestCase {
+  class MockView: View {
+    #if os(macOS)
+    override required init(frame frameRect: NSRect) {
+      super.init(frame: frameRect)
+    }
+    #else
+    override required init(frame: CGRect) {
+      super.init(frame: frame)
+    }
+    #endif
+
+    required init?(coder decoder: NSCoder) {
+      fatalError("init(coder:) has not been implemented")
+    }
+  }
 
   func testDequeingView() {
     let frame = CGRect(origin: .zero, size: CGSize(width: 50, height: 50))

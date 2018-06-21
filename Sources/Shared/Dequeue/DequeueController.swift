@@ -27,7 +27,6 @@ public class DequeueController: NSObject {
     return dequeueView(of: type, frame: frame, closure)
   }
 
-  @discardableResult
   public func prepare<T: View>(types: T.Type ...) {
     let container = View()
     for type in types {
