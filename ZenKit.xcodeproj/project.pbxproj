@@ -16,6 +16,9 @@
 		BD15F57B20C30FA200F9F0D5 /* UtilityOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15F57A20C30FA200F9F0D5 /* UtilityOperation.swift */; };
 		BD15F57C20C30FA200F9F0D5 /* UtilityOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15F57A20C30FA200F9F0D5 /* UtilityOperation.swift */; };
 		BD15F57D20C30FA200F9F0D5 /* UtilityOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15F57A20C30FA200F9F0D5 /* UtilityOperation.swift */; };
+		BD2E1B9D20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E1B9C20E2B3BB0042511E /* XCTestCase+Benchmark.swift */; };
+		BD2E1B9E20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E1B9C20E2B3BB0042511E /* XCTestCase+Benchmark.swift */; };
+		BD2E1B9F20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E1B9C20E2B3BB0042511E /* XCTestCase+Benchmark.swift */; };
 		BD3BED3B20D9325C00467A63 /* DequeueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BED3A20D9325C00467A63 /* DequeueError.swift */; };
 		BD3BED3C20D9326600467A63 /* DequeueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BED3A20D9325C00467A63 /* DequeueError.swift */; };
 		BD3BED3D20D9326700467A63 /* DequeueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BED3A20D9325C00467A63 /* DequeueError.swift */; };
@@ -52,9 +55,6 @@
 		BDC4E45520DC4BE500A3B1A8 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E45420DC4BE500A3B1A8 /* BinarySearch.swift */; };
 		BDC4E45620DC4BE500A3B1A8 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E45420DC4BE500A3B1A8 /* BinarySearch.swift */; };
 		BDC4E45720DC4BE500A3B1A8 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E45420DC4BE500A3B1A8 /* BinarySearch.swift */; };
-		BDC4E45920DC4C1B00A3B1A8 /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E45820DC4C1B00A3B1A8 /* BinarySearchTests.swift */; };
-		BDC4E45A20DC4C1B00A3B1A8 /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E45820DC4C1B00A3B1A8 /* BinarySearchTests.swift */; };
-		BDC4E45B20DC4C1B00A3B1A8 /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E45820DC4C1B00A3B1A8 /* BinarySearchTests.swift */; };
 		BDC4E45E20E0D1ED00A3B1A8 /* AlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E45D20E0D1ED00A3B1A8 /* AlgorithmTests.swift */; };
 		BDC4E45F20E0D1ED00A3B1A8 /* AlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E45D20E0D1ED00A3B1A8 /* AlgorithmTests.swift */; };
 		BDC4E46020E0D1ED00A3B1A8 /* AlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E45D20E0D1ED00A3B1A8 /* AlgorithmTests.swift */; };
@@ -134,6 +134,7 @@
 		BD145AF820C11143000731EE /* DispatchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchOperation.swift; sourceTree = "<group>"; };
 		BD145AFD20C1125C000731EE /* Dispatchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatchable.swift; sourceTree = "<group>"; };
 		BD15F57A20C30FA200F9F0D5 /* UtilityOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityOperation.swift; sourceTree = "<group>"; };
+		BD2E1B9C20E2B3BB0042511E /* XCTestCase+Benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Benchmark.swift"; sourceTree = "<group>"; };
 		BD3BED3A20D9325C00467A63 /* DequeueError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueError.swift; sourceTree = "<group>"; };
 		BD3BED3E20D9337600467A63 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		BD3BED4220D9352500467A63 /* ZenKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = ZenKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -360,6 +361,7 @@
 				D284B1321F7906DA00D94AF3 /* SharedTests.swift */,
 				BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */,
 				BDC4E45D20E0D1ED00A3B1A8 /* AlgorithmTests.swift */,
+				BD2E1B9C20E2B3BB0042511E /* XCTestCase+Benchmark.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -740,10 +742,10 @@
 			files = (
 				BDC4E46020E0D1ED00A3B1A8 /* AlgorithmTests.swift in Sources */,
 				BD6F176520D8595900F9B48D /* DequeueTests.swift in Sources */,
+				BD2E1B9F20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */,
 				BDCECD3520C072EB00589825 /* OperationsTests.swift in Sources */,
 				BDB7BF4320C31E1D002F4E02 /* UserDefaults.swift in Sources */,
 				D284B1441F7908B100D94AF3 /* SharedTests.swift in Sources */,
-				BDC4E45B20DC4C1B00A3B1A8 /* BinarySearchTests.swift in Sources */,
 				D284B13E1F7907AD00D94AF3 /* tvOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -785,10 +787,10 @@
 			files = (
 				BDB7BF4120C31E1D002F4E02 /* UserDefaults.swift in Sources */,
 				BDC4E45E20E0D1ED00A3B1A8 /* AlgorithmTests.swift in Sources */,
-				BDC4E45920DC4C1B00A3B1A8 /* BinarySearchTests.swift in Sources */,
 				BDCECD3420C072EB00589825 /* OperationsTests.swift in Sources */,
 				BDCECD3820C072EE00589825 /* UIOperationsiOSTests.swift in Sources */,
 				D284B1461F7908B300D94AF3 /* SharedTests.swift in Sources */,
+				BD2E1B9D20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */,
 				BD6F176320D8595900F9B48D /* DequeueTests.swift in Sources */,
 				D284B1471F7908B800D94AF3 /* iOSTests.swift in Sources */,
 			);
@@ -831,10 +833,10 @@
 			files = (
 				BDC4E45F20E0D1ED00A3B1A8 /* AlgorithmTests.swift in Sources */,
 				BD6F176420D8595900F9B48D /* DequeueTests.swift in Sources */,
+				BD2E1B9E20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */,
 				BDCECD3620C072EB00589825 /* OperationsTests.swift in Sources */,
 				BDB7BF4220C31E1D002F4E02 /* UserDefaults.swift in Sources */,
 				D284B1451F7908B200D94AF3 /* SharedTests.swift in Sources */,
-				BDC4E45A20DC4C1B00A3B1A8 /* BinarySearchTests.swift in Sources */,
 				D284B1481F7908BB00D94AF3 /* macOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
