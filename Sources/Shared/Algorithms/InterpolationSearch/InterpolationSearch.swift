@@ -10,10 +10,10 @@ public class InterpolationSearch<T> {
 
   public init() {}
 
-  private func _search<T>(in collection: [T],
-                          key: Int,
-                          transform: (T) -> Int,
-                          predicate: (InterpolationPredicate<T>) -> Bool) -> Int? {
+  private func _search(in collection: [T],
+                       key: Int,
+                       transform: (T) -> Int,
+                       predicate: (InterpolationPredicate<T>) -> Bool) -> Int? {
     var lowBound = 0
     var upperBound = collection.count - 1
     var mid: Int
@@ -42,20 +42,20 @@ public class InterpolationSearch<T> {
     }
   }
 
-  public func findElement<T>(in collection: [T],
-                             key: Int,
-                             transform: (T) -> Int,
-                             predicate: (InterpolationPredicate<T>) -> Bool) -> T? {
+  public func findElement(in collection: [T],
+                          key: Int,
+                          transform: (T) -> Int,
+                          predicate: (InterpolationPredicate<T>) -> Bool) -> T? {
     guard let firstMatchIndex = _search(in: collection, key: key,
                                         transform: transform,
                                         predicate: predicate) else { return nil }
     return collection[firstMatchIndex]
   }
 
-  public func findElements<T>(in collection: [T],
-                              key: Int,
-                              transform: (T) -> Int,
-                              predicate: (InterpolationPredicate<T>) -> Bool) -> [T]? {
+  public func findElements(in collection: [T],
+                           key: Int,
+                           transform: (T) -> Int,
+                           predicate: (InterpolationPredicate<T>) -> Bool) -> [T]? {
     guard let firstMatchIndex = _search(in: collection, key: key,
                                         transform: transform,
                                         predicate: predicate) else { return nil }

@@ -61,13 +61,13 @@ class AlgorithmTests: XCTestCase {
   }
 
   func testFindElements() {
-    let binarySearch = BinarySearch<[CGRect]>()
-    let interpolationSearch = InterpolationSearch<[CGRect]>()
+    let binarySearch = BinarySearch<CGRect>()
+    let interpolationSearch = InterpolationSearch<CGRect>()
     let size = CGSize(width: 50, height: 50)
     let viewport = CGRect(origin: .init(x: 0, y: 5000), size: .init(width: 375, height: 667))
     let amount = 1_000_000
     var array = [CGRect]()
-    Swift.print("🚦 Generating items")
+    Swift.print("🚦 Generating \(amount) items")
     for i in 0...amount {
       let newRect = CGRect(origin: .init(x: 0, y: size.height * CGFloat(i)), size: size)
       array.append(newRect)
@@ -84,6 +84,11 @@ class AlgorithmTests: XCTestCase {
       XCTAssertEqual(result.count, 14)
     }
 
+    var binarySearch1: [CGRect]?
+    var binarySearch2: [CGRect]?
+    var interpolationSearch1: [CGRect]?
+    var interpolationSearch2: [CGRect]?
+
     let binarySearchTime = benchmark(title: "🚗 Binary search") {
       let result = binarySearch.findElements(in: array) { predicate -> Bool in
         switch predicate {
@@ -93,6 +98,23 @@ class AlgorithmTests: XCTestCase {
           return viewport.maxY > element.minY
         }
       }
+
+      binarySearch1 = result
+
+      XCTAssertEqual(result?.count, 14)
+    }
+
+    let binarySearchTimeExtension = benchmark(title: "🏎 Binary search (extension)") {
+      let result: [CGRect]? = array.binarySearchElements { predicate in
+        switch predicate {
+        case .equal(let element):
+          return element.intersects(viewport)
+        case .less(let element):
+          return viewport.maxY > element.minY
+        }
+      }
+
+      binarySearch2 = result
 
       XCTAssertEqual(result?.count, 14)
     }
@@ -113,10 +135,37 @@ class AlgorithmTests: XCTestCase {
         }
       }
 
+      interpolationSearch1 = result
+
+      XCTAssertEqual(result?.count, 14)
+    }
+
+    let interpolationSearchTimeExtension = benchmark(title: "☄️ Interpolation search (extension)") {
+      let result = array.interpolationSearchElements(key: Int(viewport.minY), transform: { (rect) -> Int in
+        return Int(rect.minY)
+      }) { predicate -> Bool in
+        switch predicate {
+        case .notEqual(let lhs, let rhs):
+          return lhs != rhs
+        case .equal(let element):
+          return element.intersects(viewport)
+        case .less(let element, let key):
+          return key > Int(element.minY)
+        case .more(let element, let key):
+          return key < Int(element.minY)
+        }
+      }
+
+      interpolationSearch2 = result
+
       XCTAssertEqual(result?.count, 14)
     }
 
     XCTAssertTrue(binarySearchTime < linearTime)
+    XCTAssertTrue(binarySearchTime > binarySearchTimeExtension)
     XCTAssertTrue(binarySearchTime > interpolationSearchTime)
+    XCTAssertTrue(interpolationSearchTime > interpolationSearchTimeExtension)
+    XCTAssertEqual(binarySearch1, binarySearch2)
+    XCTAssertEqual(interpolationSearch1, interpolationSearch2)
   }
 }

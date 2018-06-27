@@ -25,6 +25,12 @@
 		BD3BED3F20D9337600467A63 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BED3E20D9337600467A63 /* View+Extensions.swift */; };
 		BD3BED4020D9337600467A63 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BED3E20D9337600467A63 /* View+Extensions.swift */; };
 		BD3BED4120D9341900467A63 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BED3E20D9337600467A63 /* View+Extensions.swift */; };
+		BD3ED2A120E3C9F700252C64 /* Array+BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3ED2A020E3C9F700252C64 /* Array+BinarySearch.swift */; };
+		BD3ED2A220E3C9F700252C64 /* Array+BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3ED2A020E3C9F700252C64 /* Array+BinarySearch.swift */; };
+		BD3ED2A320E3C9F700252C64 /* Array+BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3ED2A020E3C9F700252C64 /* Array+BinarySearch.swift */; };
+		BD3ED2A520E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3ED2A420E3D98700252C64 /* Array+InterpolationSearch.swift */; };
+		BD3ED2A620E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3ED2A420E3D98700252C64 /* Array+InterpolationSearch.swift */; };
+		BD3ED2A720E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3ED2A420E3D98700252C64 /* Array+InterpolationSearch.swift */; };
 		BD67BD4120DAB66E00004E04 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67BD4020DAB66E00004E04 /* Dictionary+Extensions.swift */; };
 		BD67BD4220DAB66E00004E04 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67BD4020DAB66E00004E04 /* Dictionary+Extensions.swift */; };
 		BD67BD4320DAB66E00004E04 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67BD4020DAB66E00004E04 /* Dictionary+Extensions.swift */; };
@@ -138,6 +144,8 @@
 		BD3BED3A20D9325C00467A63 /* DequeueError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueError.swift; sourceTree = "<group>"; };
 		BD3BED3E20D9337600467A63 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		BD3BED4220D9352500467A63 /* ZenKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = ZenKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BD3ED2A020E3C9F700252C64 /* Array+BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+BinarySearch.swift"; sourceTree = "<group>"; };
+		BD3ED2A420E3D98700252C64 /* Array+InterpolationSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+InterpolationSearch.swift"; sourceTree = "<group>"; };
 		BD67BD4020DAB66E00004E04 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
 		BD67BD4420DAB87200004E04 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		BD6F174A20D8576400F9B48D /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
@@ -250,6 +258,15 @@
 			path = Codable;
 			sourceTree = "<group>";
 		};
+		BD3ED29F20E3C9D200252C64 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD3ED2A020E3C9F700252C64 /* Array+BinarySearch.swift */,
+				BD3ED2A420E3D98700252C64 /* Array+InterpolationSearch.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BD6F174920D8574300F9B48D /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +305,7 @@
 		BDC4E46120E0D2F700A3B1A8 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				BD3ED29F20E3C9D200252C64 /* Extensions */,
 				BDC4E46220E0D30000A3B1A8 /* InterpolationSearch */,
 				BDC4E45320DC4BE500A3B1A8 /* BinarySearch */,
 			);
@@ -720,6 +738,7 @@
 				BDCECD2820C072CE00589825 /* UIOperation.swift in Sources */,
 				BDCECD2620C072CE00589825 /* CodableData+Extensions.swift in Sources */,
 				BD6F176120D8591A00F9B48D /* DequeueStringIdentifier.swift in Sources */,
+				BD3ED2A320E3C9F700252C64 /* Array+BinarySearch.swift in Sources */,
 				BD6F175D20D858E100F9B48D /* DequeueStringIdentifier+String.swift in Sources */,
 				BD145AFB20C11143000731EE /* DispatchOperation.swift in Sources */,
 				BDC4E45720DC4BE500A3B1A8 /* BinarySearch.swift in Sources */,
@@ -729,6 +748,7 @@
 				BD67BD4320DAB66E00004E04 /* Dictionary+Extensions.swift in Sources */,
 				BD145B0020C1125C000731EE /* Dispatchable.swift in Sources */,
 				BD67BD4720DAB87200004E04 /* Data+Extensions.swift in Sources */,
+				BD3ED2A720E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */,
 				BDCECD2220C072CE00589825 /* DispatchQueue+Extensions.swift in Sources */,
 				BDCECD2520C072CE00589825 /* OperationQueue+Extensions.swift in Sources */,
 			);
@@ -765,6 +785,7 @@
 				BDCECD1620C072CC00589825 /* UIOperation.swift in Sources */,
 				BDCECD1420C072CC00589825 /* CodableData+Extensions.swift in Sources */,
 				BD6F175F20D8591A00F9B48D /* DequeueStringIdentifier.swift in Sources */,
+				BD3ED2A120E3C9F700252C64 /* Array+BinarySearch.swift in Sources */,
 				BD6F175B20D858E100F9B48D /* DequeueStringIdentifier+String.swift in Sources */,
 				BD145AF920C11143000731EE /* DispatchOperation.swift in Sources */,
 				BDC4E45520DC4BE500A3B1A8 /* BinarySearch.swift in Sources */,
@@ -774,6 +795,7 @@
 				BD67BD4120DAB66E00004E04 /* Dictionary+Extensions.swift in Sources */,
 				BD145AFE20C1125C000731EE /* Dispatchable.swift in Sources */,
 				BD67BD4520DAB87200004E04 /* Data+Extensions.swift in Sources */,
+				BD3ED2A520E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */,
 				BDCECD1020C072CC00589825 /* DispatchQueue+Extensions.swift in Sources */,
 				BDCECD1320C072CC00589825 /* OperationQueue+Extensions.swift in Sources */,
 			);
@@ -811,6 +833,7 @@
 				BDCECD1D20C072CD00589825 /* CodableData+Extensions.swift in Sources */,
 				BD145AFA20C11143000731EE /* DispatchOperation.swift in Sources */,
 				BD6F176020D8591A00F9B48D /* DequeueStringIdentifier.swift in Sources */,
+				BD3ED2A220E3C9F700252C64 /* Array+BinarySearch.swift in Sources */,
 				BD6F175C20D858E100F9B48D /* DequeueStringIdentifier+String.swift in Sources */,
 				BDCECD2020C072CD00589825 /* CoreOperation.swift in Sources */,
 				BDC4E45620DC4BE500A3B1A8 /* BinarySearch.swift in Sources */,
@@ -820,6 +843,7 @@
 				BD67BD4220DAB66E00004E04 /* Dictionary+Extensions.swift in Sources */,
 				BD6F174F20D8578100F9B48D /* NSCollectionView+Extensions.swift in Sources */,
 				BD67BD4620DAB87200004E04 /* Data+Extensions.swift in Sources */,
+				BD3ED2A620E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */,
 				BDCECD1920C072CD00589825 /* DispatchQueue+Extensions.swift in Sources */,
 				BDCECD1C20C072CD00589825 /* OperationQueue+Extensions.swift in Sources */,
 			);
