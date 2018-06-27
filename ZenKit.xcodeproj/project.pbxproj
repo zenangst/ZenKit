@@ -355,12 +355,12 @@
 		D284B1311F7906DA00D94AF3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BDC4E45D20E0D1ED00A3B1A8 /* AlgorithmTests.swift */,
 				BDC4E45820DC4C1B00A3B1A8 /* BinarySearchTests.swift */,
-				BDCECD3320C072EB00589825 /* OperationsTests.swift */,
 				BD6F176220D8595900F9B48D /* DequeueTests.swift */,
+				BDCECD3320C072EB00589825 /* OperationsTests.swift */,
 				D284B1321F7906DA00D94AF3 /* SharedTests.swift */,
 				BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */,
-				BDC4E45D20E0D1ED00A3B1A8 /* AlgorithmTests.swift */,
 				BD2E1B9C20E2B3BB0042511E /* XCTestCase+Benchmark.swift */,
 			);
 			path = Shared;
