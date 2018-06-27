@@ -17,6 +17,12 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
+  s.subspec 'Algoritms' do |cs|
+    cs.ios.source_files = 'Sources/Shared/Algorithms/**'
+    cs.tvos.source_files = 'Sources/Shared/Algorithms/**'
+    cs.osx.source_files = 'Sources/Shared/Algorithms/**'
+  end
+
   s.subspec 'Codable' do |cs|
     cs.ios.source_files = 'Sources/Shared/Codable/**'
     cs.tvos.source_files = 'Sources/Shared/Codable/**'

@@ -17,14 +17,10 @@ public class InterpolationSearch<T> {
     var lowBound = 0
     var upperBound = collection.count - 1
     var mid: Int
-    var steps = 0
-    defer { Swift.print("Steps: \(steps)") }
 
     while predicate(.notEqual(collection[upperBound], collection[lowBound])) &&
       predicate(.less(collection[lowBound], key)) &&
       predicate(.more(collection[upperBound], key)) {
-        defer { steps += 1 }
-
         let lowValue = transform(collection[lowBound])
         let highValue = transform(collection[upperBound])
 
@@ -52,10 +48,7 @@ public class InterpolationSearch<T> {
                              predicate: (InterpolationPredicate<T>) -> Bool) -> T? {
     guard let firstMatchIndex = _search(in: collection, key: key,
                                         transform: transform,
-                                        predicate: predicate) else {
-                                          return nil
-    }
-
+                                        predicate: predicate) else { return nil }
     return collection[firstMatchIndex]
   }
 
@@ -65,12 +58,8 @@ public class InterpolationSearch<T> {
                               predicate: (InterpolationPredicate<T>) -> Bool) -> [T]? {
     guard let firstMatchIndex = _search(in: collection, key: key,
                                         transform: transform,
-                                        predicate: predicate) else {
-                                          return nil
-    }
-
+                                        predicate: predicate) else { return nil }
     var results = [T]()
-
     for element in collection[..<firstMatchIndex].reversed() {
       guard predicate(.equal(element)) else { break }
       results.append(element)

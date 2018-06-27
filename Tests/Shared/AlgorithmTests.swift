@@ -64,8 +64,8 @@ class AlgorithmTests: XCTestCase {
     let binarySearch = BinarySearch<[CGRect]>()
     let interpolationSearch = InterpolationSearch<[CGRect]>()
     let size = CGSize(width: 50, height: 50)
-    let viewport = CGRect(origin: .init(x: 0, y: 120_000), size: .init(width: 375, height: 667))
-    let amount = 100_000_000
+    let viewport = CGRect(origin: .init(x: 0, y: 5000), size: .init(width: 375, height: 667))
+    let amount = 1_000_000
     var array = [CGRect]()
     Swift.print("🚦 Generating items")
     for i in 0...amount {
@@ -84,7 +84,7 @@ class AlgorithmTests: XCTestCase {
       XCTAssertEqual(result.count, 14)
     }
 
-    let binarySearchTime = benchmark(title: "🚗 Binary search using intersects") {
+    let binarySearchTime = benchmark(title: "🚗 Binary search") {
       let result = binarySearch.findElements(in: array) { predicate -> Bool in
         switch predicate {
         case .equal(let element):
@@ -97,7 +97,7 @@ class AlgorithmTests: XCTestCase {
       XCTAssertEqual(result?.count, 14)
     }
 
-    let interpolationSearchTime = benchmark(title: "🧠 InterpolationSearch") {
+    let interpolationSearchTime = benchmark(title: "🧠 Interpolation search") {
       let result = interpolationSearch.findElements(in: array, key: Int(viewport.minY), transform: { (rect) -> Int in
         return Int(rect.minY)
       }) { predicate -> Bool in
