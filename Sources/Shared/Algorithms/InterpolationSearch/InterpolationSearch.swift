@@ -72,4 +72,67 @@ public class InterpolationSearch<T> {
 
     return results
   }
+
+  private static func _search(in collection: [T],
+                       key: Int,
+                       transform: (T) -> Int,
+                       predicate: (InterpolationPredicate<T>) -> Bool) -> Int? {
+    var lowBound = 0
+    var upperBound = collection.count - 1
+    var mid: Int
+
+    while predicate(.notEqual(collection[upperBound], collection[lowBound])) &&
+      predicate(.less(collection[lowBound], key)) &&
+      predicate(.more(collection[upperBound], key)) {
+        let lowValue = transform(collection[lowBound])
+        let highValue = transform(collection[upperBound])
+
+        mid = lowBound + ((key - lowValue) * (upperBound - lowBound) / (highValue - lowValue))
+
+        if predicate(.less(collection[mid], key)) {
+          lowBound = mid + 1
+        } else if predicate(.more(collection[mid], key)) {
+          upperBound = mid - 1
+        } else {
+          return mid
+        }
+    }
+
+    if predicate(.equal(collection[lowBound])) {
+      return lowBound
+    } else {
+      return -1
+    }
+  }
+
+  public static func findElement(in collection: [T],
+                          key: Int,
+                          transform: (T) -> Int,
+                          predicate: (InterpolationPredicate<T>) -> Bool) -> T? {
+    guard let firstMatchIndex = _search(in: collection, key: key,
+                                        transform: transform,
+                                        predicate: predicate) else { return nil }
+    return collection[firstMatchIndex]
+  }
+
+  public static func findElements(in collection: [T],
+                           key: Int,
+                           transform: (T) -> Int,
+                           predicate: (InterpolationPredicate<T>) -> Bool) -> [T]? {
+    guard let firstMatchIndex = _search(in: collection, key: key,
+                                        transform: transform,
+                                        predicate: predicate) else { return nil }
+    var results = [T]()
+    for element in collection[..<firstMatchIndex].reversed() {
+      guard predicate(.equal(element)) else { break }
+      results.append(element)
+    }
+
+    for element in collection[firstMatchIndex...] {
+      guard predicate(.equal(element)) else { break }
+      results.append(element)
+    }
+
+    return results
+  }
 }
