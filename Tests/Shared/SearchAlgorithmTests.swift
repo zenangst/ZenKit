@@ -1,7 +1,7 @@
 import XCTest
 @testable import ZenKit
 
-class AlgorithmTests: XCTestCase {
+class SearchAlgorithmTests: XCTestCase {
   func testFindElement() {
     let binarySearch = BinarySearch<Int>()
     let interpolationSearch = InterpolationSearch<Int>()
