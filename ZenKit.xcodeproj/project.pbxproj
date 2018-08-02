@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD11804C21136C4D00C793FA /* ManagedObjectManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD11804B21136C4D00C793FA /* ManagedObjectManagerError.swift */; };
+		BD11804D21136C6C00C793FA /* ManagedObjectManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD11804B21136C4D00C793FA /* ManagedObjectManagerError.swift */; };
+		BD11804E21136C6C00C793FA /* ManagedObjectManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD11804B21136C4D00C793FA /* ManagedObjectManagerError.swift */; };
+		BD11805021136C8200C793FA /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD11804F21136C8200C793FA /* NSManagedObject+Extensions.swift */; };
+		BD11805121136C8200C793FA /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD11804F21136C8200C793FA /* NSManagedObject+Extensions.swift */; };
+		BD11805221136C8200C793FA /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD11804F21136C8200C793FA /* NSManagedObject+Extensions.swift */; };
+		BD11805421136D2400C793FA /* ManagedObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD11805321136D2400C793FA /* ManagedObjectManager.swift */; };
+		BD11805521136D2400C793FA /* ManagedObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD11805321136D2400C793FA /* ManagedObjectManager.swift */; };
+		BD11805621136D2400C793FA /* ManagedObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD11805321136D2400C793FA /* ManagedObjectManager.swift */; };
 		BD145AF920C11143000731EE /* DispatchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD145AF820C11143000731EE /* DispatchOperation.swift */; };
 		BD145AFA20C11143000731EE /* DispatchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD145AF820C11143000731EE /* DispatchOperation.swift */; };
 		BD145AFB20C11143000731EE /* DispatchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD145AF820C11143000731EE /* DispatchOperation.swift */; };
@@ -16,6 +25,12 @@
 		BD15F57B20C30FA200F9F0D5 /* UtilityOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15F57A20C30FA200F9F0D5 /* UtilityOperation.swift */; };
 		BD15F57C20C30FA200F9F0D5 /* UtilityOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15F57A20C30FA200F9F0D5 /* UtilityOperation.swift */; };
 		BD15F57D20C30FA200F9F0D5 /* UtilityOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15F57A20C30FA200F9F0D5 /* UtilityOperation.swift */; };
+		BD1F34BC21133B5000BD269D /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F34BB21133B5000BD269D /* NSManagedObjectContext+Extensions.swift */; };
+		BD1F34BD21133B5300BD269D /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F34BB21133B5000BD269D /* NSManagedObjectContext+Extensions.swift */; };
+		BD1F34BE21133B5400BD269D /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F34BB21133B5000BD269D /* NSManagedObjectContext+Extensions.swift */; };
+		BD1F34C021133C7200BD269D /* CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F34BF21133C7200BD269D /* CoreDataTests.swift */; };
+		BD1F34C121133C7200BD269D /* CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F34BF21133C7200BD269D /* CoreDataTests.swift */; };
+		BD1F34C221133C7200BD269D /* CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F34BF21133C7200BD269D /* CoreDataTests.swift */; };
 		BD2E1B9D20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E1B9C20E2B3BB0042511E /* XCTestCase+Benchmark.swift */; };
 		BD2E1B9E20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E1B9C20E2B3BB0042511E /* XCTestCase+Benchmark.swift */; };
 		BD2E1B9F20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E1B9C20E2B3BB0042511E /* XCTestCase+Benchmark.swift */; };
@@ -170,9 +185,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD11804B21136C4D00C793FA /* ManagedObjectManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectManagerError.swift; sourceTree = "<group>"; };
+		BD11804F21136C8200C793FA /* NSManagedObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Extensions.swift"; sourceTree = "<group>"; };
+		BD11805321136D2400C793FA /* ManagedObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectManager.swift; sourceTree = "<group>"; };
 		BD145AF820C11143000731EE /* DispatchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchOperation.swift; sourceTree = "<group>"; };
 		BD145AFD20C1125C000731EE /* Dispatchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatchable.swift; sourceTree = "<group>"; };
 		BD15F57A20C30FA200F9F0D5 /* UtilityOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityOperation.swift; sourceTree = "<group>"; };
+		BD1F34BB21133B5000BD269D /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		BD1F34BF21133C7200BD269D /* CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTests.swift; sourceTree = "<group>"; };
 		BD2E1B9C20E2B3BB0042511E /* XCTestCase+Benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Benchmark.swift"; sourceTree = "<group>"; };
 		BD32580120EB68600048352D /* ONP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONP.swift; sourceTree = "<group>"; };
 		BD32580820EB68FB0048352D /* DiffManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffManager.swift; sourceTree = "<group>"; };
@@ -284,6 +304,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD1F34BA21133B4100BD269D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BD11804F21136C8200C793FA /* NSManagedObject+Extensions.swift */,
+				BD1F34BB21133B5000BD269D /* NSManagedObjectContext+Extensions.swift */,
+				BD11804B21136C4D00C793FA /* ManagedObjectManagerError.swift */,
+				BD11805321136D2400C793FA /* ManagedObjectManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		BD3257FF20EB682C0048352D /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,14 +495,15 @@
 		D284B1311F7906DA00D94AF3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BD1F34BF21133C7200BD269D /* CoreDataTests.swift */,
 				BD6F176220D8595900F9B48D /* DequeueTests.swift */,
 				BD32582520EB71200048352D /* DiffAlgorithmsTests.swift */,
+				BDC070A6211118CA0008AE95 /* GrandCentralDispatchTests.swift */,
 				BDCECD3320C072EB00589825 /* OperationsTests.swift */,
 				BDC4E45D20E0D1ED00A3B1A8 /* SearchAlgorithmTests.swift */,
 				D284B1321F7906DA00D94AF3 /* SharedTests.swift */,
 				BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */,
 				BD2E1B9C20E2B3BB0042511E /* XCTestCase+Benchmark.swift */,
-				BDC070A6211118CA0008AE95 /* GrandCentralDispatchTests.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -553,6 +585,7 @@
 			children = (
 				BDC4E46120E0D2F700A3B1A8 /* Algorithms */,
 				BD3BED4420D9380E00467A63 /* Codable */,
+				BD1F34BA21133B4100BD269D /* CoreData */,
 				BD6F175520D858D200F9B48D /* Dequeue */,
 				BDCECD0520C072BB00589825 /* Extensions */,
 				BDC070A121110F840008AE95 /* GrandCentralDispatch */,
@@ -824,6 +857,7 @@
 				BDCECD2120C072CE00589825 /* Result.swift in Sources */,
 				BD32582020EB68FB0048352D /* Counter.swift in Sources */,
 				BD32582320EB68FB0048352D /* TableEntry.swift in Sources */,
+				BD1F34BE21133B5400BD269D /* NSManagedObjectContext+Extensions.swift in Sources */,
 				BDC4E46620E0D31600A3B1A8 /* InterpolationSearch.swift in Sources */,
 				BD32581420EB68FB0048352D /* ArrayEntry.swift in Sources */,
 				BD3BED4020D9337600467A63 /* View+Extensions.swift in Sources */,
@@ -847,13 +881,16 @@
 				BD32581120EB68FB0048352D /* DiffManager.swift in Sources */,
 				BD67BD4320DAB66E00004E04 /* Dictionary+Extensions.swift in Sources */,
 				BD32580420EB68600048352D /* ONP.swift in Sources */,
+				BD11804E21136C6C00C793FA /* ManagedObjectManagerError.swift in Sources */,
 				BD145B0020C1125C000731EE /* Dispatchable.swift in Sources */,
 				BD32581A20EB68FB0048352D /* Algorithm.swift in Sources */,
 				BD67BD4720DAB87200004E04 /* Data+Extensions.swift in Sources */,
 				BD3ED2A720E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */,
 				BD32581720EB68FB0048352D /* IndexPathManager.swift in Sources */,
+				BD11805621136D2400C793FA /* ManagedObjectManager.swift in Sources */,
 				BDC070A521110F9C0008AE95 /* GrandCentralDispatch.swift in Sources */,
 				BDCECD2220C072CE00589825 /* DispatchQueue+Extensions.swift in Sources */,
+				BD11805221136C8200C793FA /* NSManagedObject+Extensions.swift in Sources */,
 				BDCECD2520C072CE00589825 /* OperationQueue+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -866,6 +903,7 @@
 				BD6F176520D8595900F9B48D /* DequeueTests.swift in Sources */,
 				BD32582820EB71200048352D /* DiffAlgorithmsTests.swift in Sources */,
 				BDC070A9211118CA0008AE95 /* GrandCentralDispatchTests.swift in Sources */,
+				BD1F34C221133C7200BD269D /* CoreDataTests.swift in Sources */,
 				BD2E1B9F20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */,
 				BDCECD3520C072EB00589825 /* OperationsTests.swift in Sources */,
 				BDB7BF4320C31E1D002F4E02 /* UserDefaults.swift in Sources */,
@@ -882,6 +920,7 @@
 				BDCECD0F20C072CC00589825 /* Result.swift in Sources */,
 				BD32581E20EB68FB0048352D /* Counter.swift in Sources */,
 				BD32582120EB68FB0048352D /* TableEntry.swift in Sources */,
+				BD1F34BC21133B5000BD269D /* NSManagedObjectContext+Extensions.swift in Sources */,
 				BDC4E46420E0D31600A3B1A8 /* InterpolationSearch.swift in Sources */,
 				BD32581220EB68FB0048352D /* ArrayEntry.swift in Sources */,
 				BD3BED3F20D9337600467A63 /* View+Extensions.swift in Sources */,
@@ -905,13 +944,16 @@
 				BD32580F20EB68FB0048352D /* DiffManager.swift in Sources */,
 				BD67BD4120DAB66E00004E04 /* Dictionary+Extensions.swift in Sources */,
 				BD32580220EB68600048352D /* ONP.swift in Sources */,
+				BD11804C21136C4D00C793FA /* ManagedObjectManagerError.swift in Sources */,
 				BD145AFE20C1125C000731EE /* Dispatchable.swift in Sources */,
 				BD32581820EB68FB0048352D /* Algorithm.swift in Sources */,
 				BD67BD4520DAB87200004E04 /* Data+Extensions.swift in Sources */,
 				BD3ED2A520E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */,
 				BD32581520EB68FB0048352D /* IndexPathManager.swift in Sources */,
+				BD11805421136D2400C793FA /* ManagedObjectManager.swift in Sources */,
 				BDC070A321110F9C0008AE95 /* GrandCentralDispatch.swift in Sources */,
 				BDCECD1020C072CC00589825 /* DispatchQueue+Extensions.swift in Sources */,
+				BD11805021136C8200C793FA /* NSManagedObject+Extensions.swift in Sources */,
 				BDCECD1320C072CC00589825 /* OperationQueue+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -927,6 +969,7 @@
 				BDCECD3820C072EE00589825 /* UIOperationsiOSTests.swift in Sources */,
 				D284B1461F7908B300D94AF3 /* SharedTests.swift in Sources */,
 				BD32582620EB71200048352D /* DiffAlgorithmsTests.swift in Sources */,
+				BD1F34C021133C7200BD269D /* CoreDataTests.swift in Sources */,
 				BD2E1B9D20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */,
 				BD6F176320D8595900F9B48D /* DequeueTests.swift in Sources */,
 				D284B1471F7908B800D94AF3 /* iOSTests.swift in Sources */,
@@ -941,6 +984,7 @@
 				BDCECD3B20C0740B00589825 /* Array+Extensions.swift in Sources */,
 				BD32581F20EB68FB0048352D /* Counter.swift in Sources */,
 				BD32582220EB68FB0048352D /* TableEntry.swift in Sources */,
+				BD1F34BD21133B5300BD269D /* NSManagedObjectContext+Extensions.swift in Sources */,
 				BDC4E46520E0D31600A3B1A8 /* InterpolationSearch.swift in Sources */,
 				BD32581320EB68FB0048352D /* ArrayEntry.swift in Sources */,
 				BD3BED4120D9341900467A63 /* View+Extensions.swift in Sources */,
@@ -964,13 +1008,16 @@
 				BD32581020EB68FB0048352D /* DiffManager.swift in Sources */,
 				BD67BD4220DAB66E00004E04 /* Dictionary+Extensions.swift in Sources */,
 				BD32580320EB68600048352D /* ONP.swift in Sources */,
+				BD11804D21136C6C00C793FA /* ManagedObjectManagerError.swift in Sources */,
 				BD6F174F20D8578100F9B48D /* NSCollectionView+Extensions.swift in Sources */,
 				BD32581920EB68FB0048352D /* Algorithm.swift in Sources */,
 				BD67BD4620DAB87200004E04 /* Data+Extensions.swift in Sources */,
 				BD3ED2A620E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */,
 				BD32581620EB68FB0048352D /* IndexPathManager.swift in Sources */,
+				BD11805521136D2400C793FA /* ManagedObjectManager.swift in Sources */,
 				BDC070A421110F9C0008AE95 /* GrandCentralDispatch.swift in Sources */,
 				BDCECD1920C072CD00589825 /* DispatchQueue+Extensions.swift in Sources */,
+				BD11805121136C8200C793FA /* NSManagedObject+Extensions.swift in Sources */,
 				BDCECD1C20C072CD00589825 /* OperationQueue+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -983,6 +1030,7 @@
 				BD6F176420D8595900F9B48D /* DequeueTests.swift in Sources */,
 				BD32582720EB71200048352D /* DiffAlgorithmsTests.swift in Sources */,
 				BDC070A8211118CA0008AE95 /* GrandCentralDispatchTests.swift in Sources */,
+				BD1F34C121133C7200BD269D /* CoreDataTests.swift in Sources */,
 				BD2E1B9E20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */,
 				BDCECD3620C072EB00589825 /* OperationsTests.swift in Sources */,
 				BDB7BF4220C31E1D002F4E02 /* UserDefaults.swift in Sources */,
