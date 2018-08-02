@@ -9,7 +9,7 @@ public extension NSManagedObject {
     entity.managedObjectClassName = stringSelf
     return entity
   }
-
+  
   static public func insert<T: NSManagedObject>(_ type: T.Type,
                                                 in context: NSManagedObjectContext) throws -> T {
     return try ManagedObjectManager.object(type, in: context) as T
