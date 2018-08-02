@@ -49,6 +49,12 @@ Pod::Spec.new do |s|
     cs.osx.source_files = 'Sources/Shared/Dequeue/*'
   end
 
+  s.subspec 'GrandCentralDispatch' do |cs|
+    cs.ios.source_files = 'Sources/Shared/GrandCentralDispatch/*'
+    cs.tvos.source_files = 'Sources/Shared/GrandCentralDispatch/*'
+    cs.osx.source_files = 'Sources/Shared/GrandCentralDispatch/*'
+  end
+
   s.subspec 'Operations' do |cs|
     cs.ios.source_files = 'Sources/Shared/Operations/*'
     cs.tvos.source_files = 'Sources/Shared/Operations/*'

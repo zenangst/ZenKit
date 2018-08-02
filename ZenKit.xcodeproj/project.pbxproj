@@ -85,6 +85,12 @@
 		BDB7BF4120C31E1D002F4E02 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */; };
 		BDB7BF4220C31E1D002F4E02 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */; };
 		BDB7BF4320C31E1D002F4E02 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */; };
+		BDC070A321110F9C0008AE95 /* GrandCentralDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC070A221110F9C0008AE95 /* GrandCentralDispatch.swift */; };
+		BDC070A421110F9C0008AE95 /* GrandCentralDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC070A221110F9C0008AE95 /* GrandCentralDispatch.swift */; };
+		BDC070A521110F9C0008AE95 /* GrandCentralDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC070A221110F9C0008AE95 /* GrandCentralDispatch.swift */; };
+		BDC070A7211118CA0008AE95 /* GrandCentralDispatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC070A6211118CA0008AE95 /* GrandCentralDispatchTests.swift */; };
+		BDC070A8211118CA0008AE95 /* GrandCentralDispatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC070A6211118CA0008AE95 /* GrandCentralDispatchTests.swift */; };
+		BDC070A9211118CA0008AE95 /* GrandCentralDispatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC070A6211118CA0008AE95 /* GrandCentralDispatchTests.swift */; };
 		BDC4E45520DC4BE500A3B1A8 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E45420DC4BE500A3B1A8 /* BinarySearch.swift */; };
 		BDC4E45620DC4BE500A3B1A8 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E45420DC4BE500A3B1A8 /* BinarySearch.swift */; };
 		BDC4E45720DC4BE500A3B1A8 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4E45420DC4BE500A3B1A8 /* BinarySearch.swift */; };
@@ -192,6 +198,8 @@
 		BD6F175E20D8591A00F9B48D /* DequeueStringIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueStringIdentifier.swift; sourceTree = "<group>"; };
 		BD6F176220D8595900F9B48D /* DequeueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DequeueTests.swift; sourceTree = "<group>"; };
 		BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		BDC070A221110F9C0008AE95 /* GrandCentralDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatch.swift; sourceTree = "<group>"; };
+		BDC070A6211118CA0008AE95 /* GrandCentralDispatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatchTests.swift; sourceTree = "<group>"; };
 		BDC4E45420DC4BE500A3B1A8 /* BinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		BDC4E45D20E0D1ED00A3B1A8 /* SearchAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlgorithmTests.swift; sourceTree = "<group>"; };
 		BDC4E46320E0D31600A3B1A8 /* InterpolationSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolationSearch.swift; sourceTree = "<group>"; };
@@ -371,6 +379,14 @@
 			path = Dequeue;
 			sourceTree = "<group>";
 		};
+		BDC070A121110F840008AE95 /* GrandCentralDispatch */ = {
+			isa = PBXGroup;
+			children = (
+				BDC070A221110F9C0008AE95 /* GrandCentralDispatch.swift */,
+			);
+			path = GrandCentralDispatch;
+			sourceTree = "<group>";
+		};
 		BDC4E45320DC4BE500A3B1A8 /* BinarySearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +471,7 @@
 				D284B1321F7906DA00D94AF3 /* SharedTests.swift */,
 				BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */,
 				BD2E1B9C20E2B3BB0042511E /* XCTestCase+Benchmark.swift */,
+				BDC070A6211118CA0008AE95 /* GrandCentralDispatchTests.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -534,6 +551,7 @@
 		D5C6296E1C3A809D007F7B7C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BDC070A121110F840008AE95 /* GrandCentralDispatch */,
 				BDC4E46120E0D2F700A3B1A8 /* Algorithms */,
 				BD3BED4420D9380E00467A63 /* Codable */,
 				BD6F175520D858D200F9B48D /* Dequeue */,
@@ -834,6 +852,7 @@
 				BD67BD4720DAB87200004E04 /* Data+Extensions.swift in Sources */,
 				BD3ED2A720E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */,
 				BD32581720EB68FB0048352D /* IndexPathManager.swift in Sources */,
+				BDC070A521110F9C0008AE95 /* GrandCentralDispatch.swift in Sources */,
 				BDCECD2220C072CE00589825 /* DispatchQueue+Extensions.swift in Sources */,
 				BDCECD2520C072CE00589825 /* OperationQueue+Extensions.swift in Sources */,
 			);
@@ -846,6 +865,7 @@
 				BDC4E46020E0D1ED00A3B1A8 /* SearchAlgorithmTests.swift in Sources */,
 				BD6F176520D8595900F9B48D /* DequeueTests.swift in Sources */,
 				BD32582820EB71200048352D /* DiffAlgorithmsTests.swift in Sources */,
+				BDC070A9211118CA0008AE95 /* GrandCentralDispatchTests.swift in Sources */,
 				BD2E1B9F20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */,
 				BDCECD3520C072EB00589825 /* OperationsTests.swift in Sources */,
 				BDB7BF4320C31E1D002F4E02 /* UserDefaults.swift in Sources */,
@@ -890,6 +910,7 @@
 				BD67BD4520DAB87200004E04 /* Data+Extensions.swift in Sources */,
 				BD3ED2A520E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */,
 				BD32581520EB68FB0048352D /* IndexPathManager.swift in Sources */,
+				BDC070A321110F9C0008AE95 /* GrandCentralDispatch.swift in Sources */,
 				BDCECD1020C072CC00589825 /* DispatchQueue+Extensions.swift in Sources */,
 				BDCECD1320C072CC00589825 /* OperationQueue+Extensions.swift in Sources */,
 			);
@@ -901,6 +922,7 @@
 			files = (
 				BDB7BF4120C31E1D002F4E02 /* UserDefaults.swift in Sources */,
 				BDC4E45E20E0D1ED00A3B1A8 /* SearchAlgorithmTests.swift in Sources */,
+				BDC070A7211118CA0008AE95 /* GrandCentralDispatchTests.swift in Sources */,
 				BDCECD3420C072EB00589825 /* OperationsTests.swift in Sources */,
 				BDCECD3820C072EE00589825 /* UIOperationsiOSTests.swift in Sources */,
 				D284B1461F7908B300D94AF3 /* SharedTests.swift in Sources */,
@@ -947,6 +969,7 @@
 				BD67BD4620DAB87200004E04 /* Data+Extensions.swift in Sources */,
 				BD3ED2A620E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */,
 				BD32581620EB68FB0048352D /* IndexPathManager.swift in Sources */,
+				BDC070A421110F9C0008AE95 /* GrandCentralDispatch.swift in Sources */,
 				BDCECD1920C072CD00589825 /* DispatchQueue+Extensions.swift in Sources */,
 				BDCECD1C20C072CD00589825 /* OperationQueue+Extensions.swift in Sources */,
 			);
@@ -959,6 +982,7 @@
 				BDC4E45F20E0D1ED00A3B1A8 /* SearchAlgorithmTests.swift in Sources */,
 				BD6F176420D8595900F9B48D /* DequeueTests.swift in Sources */,
 				BD32582720EB71200048352D /* DiffAlgorithmsTests.swift in Sources */,
+				BDC070A8211118CA0008AE95 /* GrandCentralDispatchTests.swift in Sources */,
 				BD2E1B9E20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */,
 				BDCECD3620C072EB00589825 /* OperationsTests.swift in Sources */,
 				BDB7BF4220C31E1D002F4E02 /* UserDefaults.swift in Sources */,
