@@ -551,11 +551,11 @@
 		D5C6296E1C3A809D007F7B7C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BDC070A121110F840008AE95 /* GrandCentralDispatch */,
 				BDC4E46120E0D2F700A3B1A8 /* Algorithms */,
 				BD3BED4420D9380E00467A63 /* Codable */,
 				BD6F175520D858D200F9B48D /* Dequeue */,
 				BDCECD0520C072BB00589825 /* Extensions */,
+				BDC070A121110F840008AE95 /* GrandCentralDispatch */,
 				BDCECD0B20C072BB00589825 /* Operations */,
 				BD6F175020D8589400F9B48D /* TypeAlias.swift */,
 				BD3BED4320D9380000467A63 /* UserDefaults */,
