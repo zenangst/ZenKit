@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
     cs.osx.source_files = 'Sources/Shared/Extensions/**'
   end
 
-  s.subspec 'Core' do |cs|
+  s.subspec 'CoreData' do |cs|
     cs.dependency 'ZenKit/TypeAlias'
     cs.ios.source_files = 'Sources/Shared/CoreData/**'
     cs.tvos.source_files = 'Sources/Shared/CoreData/**'
