@@ -15,9 +15,9 @@ class CoreDataTests: XCTestCase {
 
     let coordinator = NSPersistentStoreCoordinator(managedObjectModel: model)
     _ = try? coordinator.addPersistentStore(ofType: NSInMemoryStoreType,
-                                        configurationName: nil,
-                                        at: nil,
-                                        options: nil)
+                                            configurationName: nil,
+                                            at: nil,
+                                            options: nil)
     let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
     context.persistentStoreCoordinator = coordinator
 
