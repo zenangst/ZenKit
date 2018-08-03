@@ -3,10 +3,11 @@ import Foundation
 
 public extension NSManagedObjectContext {
   public func fetch<T: NSManagedObject>(_ type: T.Type,
-                                        closure: ((NSFetchRequest<T>) -> Void)? = nil,
+                                        sortDescriptors: [NSSortDescriptor]? = nil,
                                         predicates: NSPredicate ...) throws -> [T] {
     let request = NSFetchRequest<T>(type, predicates: predicates)
-    closure?(request)
+    request.sortDescriptors = sortDescriptors
+
     return try self.fetch(request)
   }
 }
