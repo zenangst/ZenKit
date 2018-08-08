@@ -4,17 +4,24 @@ import Foundation
 class ManagedObjectManager {
   static func entityName(for type: NSManagedObject.Type) -> String {
     #if os(macOS)
-    if #available(OSX 10.12, *) {
-      return type.entity().name!
-    } else {
-      // This should be fixed by properly resolving the entity name on older versions of macOS.
-      return String(describing: type)
-    }
+      if #available(OSX 10.12, *) {
+        return type.entity().name!
+      } else {
+        return entityFallback(for: type)
+      }
     #else
-    return type.entity().name!
+      if #available(iOS 10.0, *) {
+        return type.entity().name!
+      } else {
+        return entityFallback(for: type)
+      }
     #endif
   }
-  
+
+  static func entityFallback(for type: NSManagedObject.Type) -> String {
+    return String(describing: type)
+  }
+
   static func entity(using type: NSManagedObject.Type,
                      in context: NSManagedObjectContext) -> NSEntityDescription? {
     let entityDescription = NSEntityDescription.entity(forEntityName: ManagedObjectManager.entityName(for: type),
