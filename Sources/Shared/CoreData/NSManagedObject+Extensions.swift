@@ -14,4 +14,16 @@ public extension NSManagedObject {
                                                 in context: NSManagedObjectContext) throws -> T {
     return try ManagedObjectManager.object(type, in: context) as T
   }
+
+  @discardableResult
+  static public func insertAndSave<T: NSManagedObject>(_ type: T.Type,
+                                                in context: NSManagedObjectContext,
+                                                closure: (T) -> Void) throws -> T {
+    let object: T = try ManagedObjectManager.object(type, in: context)
+    closure(object)
+    object.willSave()
+    try context.save()
+    object.didSave()
+    return object
+  }
 }
