@@ -53,35 +53,4 @@ class CoreDataTests: XCTestCase {
     XCTAssertEqual(user.lastName, "Winter")
     XCTAssertFalse(user.hasChanges)
   }
-
-  func testBinding() {
-    let controller = BindingsController()
-    let user = try! NSManagedObject.insert(User.self, in: context)
-    var firstNameLabel: UILabel? = UILabel()
-    var lastNameLabel: UILabel? = UILabel()
-
-    user.firstName = "Chris"
-
-    controller.addBindings(
-      user.bind(\.firstName, to: firstNameLabel, keyPath: \.text),
-      user.bind(\.lastName, to: lastNameLabel, keyPath: \.text)
-    )
-
-    XCTAssertEqual(firstNameLabel?.text, user.firstName)
-    XCTAssertEqual(lastNameLabel?.text, user.lastName)
-
-    user.firstName = "Sindre"
-    user.lastName = "Moen"
-    XCTAssertEqual(firstNameLabel?.text, user.firstName)
-    XCTAssertEqual(lastNameLabel?.text, user.lastName)
-
-    firstNameLabel = nil
-    lastNameLabel = nil
-    user.firstName = "Eirik"
-    user.lastName = "Penne"
-
-    XCTAssertEqual(user.firstName, "Eirik")
-    XCTAssertEqual(user.lastName, "Penne")
-    XCTAssertEqual(firstNameLabel?.text, nil)
-  }
 }
