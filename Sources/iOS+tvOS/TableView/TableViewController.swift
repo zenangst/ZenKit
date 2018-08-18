@@ -4,7 +4,7 @@ open class TableViewController: UITableViewController {
   let dataSource: UITableViewDataSource
   let configuration: (UITableView) -> Void
 
-  init(dataSource: UITableViewDataSource,
+  public init(dataSource: UITableViewDataSource,
        configuration: @escaping (UITableView) -> Void) {
     self.dataSource = dataSource
     self.configuration = configuration

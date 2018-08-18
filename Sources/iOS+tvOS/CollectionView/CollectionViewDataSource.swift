@@ -5,7 +5,8 @@ open class CollectionViewDataSource<T: Hashable>: DataSource, UICollectionViewDa
   var collectionView: UICollectionView? { return view as? UICollectionView }
   var models: [T]
 
-  required public init(models: [T] = [], configuration: @escaping (UICollectionView, T, IndexPath) -> UICollectionViewCell) {
+  required public init(models: [T] = [],
+                       configuration: @escaping (UICollectionView, T, IndexPath) -> UICollectionViewCell) {
     self.models = models
     self.configuration = configuration
     super.init()

@@ -4,7 +4,7 @@ open class CollectionViewController: UICollectionViewController {
   let dataSource: UICollectionViewDataSource
   let configuration: (UICollectionView) -> Void
 
-  init(layout: UICollectionViewLayout,
+  public init(layout: UICollectionViewLayout,
        dataSource: UICollectionViewDataSource,
        configuration: @escaping (UICollectionView) -> Void) {
     self.dataSource = dataSource

@@ -4,13 +4,14 @@ public class TableViewDataSource<T: Hashable>: DataSource, UITableViewDataSource
   let configuration: (UITableView, T, IndexPath) -> UITableViewCell
   var tableView: UITableView? { return view as? UITableView }
   var models: [T]
-
-  required init(models: [T] = [], configuration: @escaping (UITableView, T, IndexPath) -> UITableViewCell) {
+  
+  public required init(models: [T] = [],
+                       configuration: @escaping (UITableView, T, IndexPath) -> UITableViewCell) {
     self.models = models
     self.configuration = configuration
     super.init()
   }
-
+  
   public func reload(with models: [T], completion: ((UITableView) -> Void)? = nil) {
     guard let tableView = tableView else { return }
     let manager = DiffManager()

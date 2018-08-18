@@ -3,7 +3,7 @@ import Foundation
 open class DataSource: NSObject, DataSourceDriven {
   weak var view: Reloadable?
 
-  override init() {
+  public override init() {
     super.init()
     Injection.add(observer: self, with: #selector(injected(_:)))
   }

@@ -17,10 +17,10 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.subspec 'Algoritms' do |cs|
-    cs.ios.source_files = 'Sources/Shared/Algorithms/**'
-    cs.tvos.source_files = 'Sources/Shared/Algorithms/**'
-    cs.osx.source_files = 'Sources/Shared/Algorithms/**'
+  s.subspec 'Algorithms' do |cs|
+    cs.ios.source_files = 'Sources/Shared/Algorithms/**/*'
+    cs.tvos.source_files = 'Sources/Shared/Algorithms/**/*'
+    cs.osx.source_files = 'Sources/Shared/Algorithms/**/*'
   end
 
   s.subspec 'Codable' do |cs|
@@ -51,10 +51,11 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'DataSource' do |cs|
+    cs.dependency 'ZenKit/Algorithms'
     cs.dependency 'ZenKit/Injection'
-    cs.ios.source_files = 'Sources/iOS+tvOS/DataSource/*'
-    cs.tvos.source_files = 'Source/iOS+tvOS/DataSource/*'
-    cs.osx.source_files = 'Sources/macOS/DataSource/*'
+    cs.ios.source_files = 'Sources/Shared/DataSource/*'
+    cs.tvos.source_files = 'Source/Shared/DataSource/*'
+    cs.osx.source_files = 'Sources/Shared/DataSource/*'
   end
 
   s.subspec 'Extensions' do |cs|
@@ -77,6 +78,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Injection' do |cs|
+    cs.dependency 'ZenKit/Core'
     cs.ios.source_files = 'Sources/Shared/Injection/*'
     cs.tvos.source_files = 'Sources/Shared/Injection/*'
     cs.osx.source_files = 'Sources/Shared/Injection/*'
