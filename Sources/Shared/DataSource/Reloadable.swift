@@ -1,6 +1,6 @@
 import Foundation
 
-protocol Reloadable: class {
+public protocol Reloadable: class {
   func reloadData()
 }
 

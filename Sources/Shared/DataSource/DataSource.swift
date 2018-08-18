@@ -1,7 +1,7 @@
 import Foundation
 
 open class DataSource: NSObject, DataSourceDriven {
-  weak var view: Reloadable?
+  public weak var view: Reloadable?
 
   public override init() {
     super.init()
