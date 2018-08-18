@@ -16,11 +16,10 @@ public class OperationController<T: Operation> {
   }
 
   public func execute(_ completion: OperationManagerCompletion = nil) {
-    switch _operations.hasElements {
-    case true:
+    if _operations.isNotEmpty {
       _operations.last?.completionBlock = DispatchQueue.main.wrap(completion)
       execute(_operations)
-    case false:
+    } else {
       DispatchQueue.main.execute(completion)
     }
   }

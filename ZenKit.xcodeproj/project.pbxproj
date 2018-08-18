@@ -146,9 +146,9 @@
 		BDCECD3520C072EB00589825 /* OperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCECD3320C072EB00589825 /* OperationsTests.swift */; };
 		BDCECD3620C072EB00589825 /* OperationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCECD3320C072EB00589825 /* OperationsTests.swift */; };
 		BDCECD3820C072EE00589825 /* UIOperationsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCECD3720C072EE00589825 /* UIOperationsiOSTests.swift */; };
-		BDCECD3A20C0740B00589825 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCECD3920C0740B00589825 /* Array+Extensions.swift */; };
-		BDCECD3B20C0740B00589825 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCECD3920C0740B00589825 /* Array+Extensions.swift */; };
-		BDCECD3C20C0740B00589825 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCECD3920C0740B00589825 /* Array+Extensions.swift */; };
+		BDCECD3A20C0740B00589825 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCECD3920C0740B00589825 /* Collection+Extensions.swift */; };
+		BDCECD3B20C0740B00589825 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCECD3920C0740B00589825 /* Collection+Extensions.swift */; };
+		BDCECD3C20C0740B00589825 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCECD3920C0740B00589825 /* Collection+Extensions.swift */; };
 		BDF5358E212358B2007B6E26 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF5358D212358B2007B6E26 /* CoreDataController.swift */; };
 		BDF5358F212358B2007B6E26 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF5358D212358B2007B6E26 /* CoreDataController.swift */; };
 		BDF53590212358B2007B6E26 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF5358D212358B2007B6E26 /* CoreDataController.swift */; };
@@ -237,7 +237,7 @@
 		BDCECD0E20C072BB00589825 /* CoreOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreOperation.swift; sourceTree = "<group>"; };
 		BDCECD3320C072EB00589825 /* OperationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsTests.swift; sourceTree = "<group>"; };
 		BDCECD3720C072EE00589825 /* UIOperationsiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOperationsiOSTests.swift; sourceTree = "<group>"; };
-		BDCECD3920C0740B00589825 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		BDCECD3920C0740B00589825 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		BDF5358D212358B2007B6E26 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		D284B0FC1F79038B00D94AF3 /* ZenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D284B1041F79038B00D94AF3 /* ZenKit-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZenKit-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -451,7 +451,7 @@
 		BDCECD0520C072BB00589825 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BDCECD3920C0740B00589825 /* Array+Extensions.swift */,
+				BDCECD3920C0740B00589825 /* Collection+Extensions.swift */,
 				BD3BED3E20D9337600467A63 /* View+Extensions.swift */,
 				BD67BD4020DAB66E00004E04 /* Dictionary+Extensions.swift */,
 				BD67BD4420DAB87200004E04 /* Data+Extensions.swift */,
@@ -869,7 +869,7 @@
 				BD3BED4020D9337600467A63 /* View+Extensions.swift in Sources */,
 				BD6F175A20D858E100F9B48D /* DequeueController.swift in Sources */,
 				BD3BED3D20D9326700467A63 /* DequeueError.swift in Sources */,
-				BDCECD3C20C0740B00589825 /* Array+Extensions.swift in Sources */,
+				BDCECD3C20C0740B00589825 /* Collection+Extensions.swift in Sources */,
 				BDCECD2320C072CE00589825 /* JSONDecoder+Extensions.swift in Sources */,
 				BD15F57D20C30FA200F9F0D5 /* UtilityOperation.swift in Sources */,
 				BDCECD2420C072CE00589825 /* UserDefaults+Extensions.swift in Sources */,
@@ -933,7 +933,7 @@
 				BD3BED3F20D9337600467A63 /* View+Extensions.swift in Sources */,
 				BD6F175820D858E100F9B48D /* DequeueController.swift in Sources */,
 				BD3BED3B20D9325C00467A63 /* DequeueError.swift in Sources */,
-				BDCECD3A20C0740B00589825 /* Array+Extensions.swift in Sources */,
+				BDCECD3A20C0740B00589825 /* Collection+Extensions.swift in Sources */,
 				BDCECD1120C072CC00589825 /* JSONDecoder+Extensions.swift in Sources */,
 				BD15F57B20C30FA200F9F0D5 /* UtilityOperation.swift in Sources */,
 				BDCECD1220C072CC00589825 /* UserDefaults+Extensions.swift in Sources */,
@@ -988,7 +988,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDCECD1820C072CD00589825 /* Result.swift in Sources */,
-				BDCECD3B20C0740B00589825 /* Array+Extensions.swift in Sources */,
+				BDCECD3B20C0740B00589825 /* Collection+Extensions.swift in Sources */,
 				BD32581F20EB68FB0048352D /* Counter.swift in Sources */,
 				BD32582220EB68FB0048352D /* TableEntry.swift in Sources */,
 				BDF5358F212358B2007B6E26 /* CoreDataController.swift in Sources */,

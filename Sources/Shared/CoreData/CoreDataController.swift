@@ -20,9 +20,9 @@ public extension CoreDataController {
       userInfo[NSDeletedObjectsKey] as? Set<T> ?? []
     )
 
-    let updatedObjects: [T] = updates.filter({ !$0.changedValues().isEmpty })
+    let updatedObjects: [T] = updates.filter({ $0.changedValues().isNotEmpty })
 
-    if !updatedObjects.isEmpty || !inserts.isEmpty || !deletes.isEmpty {
+    if updatedObjects.isNotEmpty || inserts.isNotEmpty || deletes.isNotEmpty {
       updateClosure(updatedObjects)
     }
   }

@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'CoreData' do |cs|
-    cs.dependency 'ZenKit/TypeAlias'
+    cs.dependency 'ZenKit/Extensions'
     cs.ios.source_files = 'Sources/Shared/CoreData/**'
     cs.tvos.source_files = 'Sources/Shared/CoreData/**'
     cs.osx.source_files = 'Sources/Shared/CoreData/**'
@@ -47,6 +47,12 @@ Pod::Spec.new do |s|
     cs.ios.source_files = 'Sources/iOS+tvOS/CollectionView/*'
     cs.tvos.source_files = 'Source/iOS+tvOS/CollectionView/*'
     cs.osx.source_files = 'Sources/macOS/CollectionView/*'
+  end
+
+  s.subspec 'Extensions' do |cs|
+    cs.ios.source_files = 'Sources/iOS+tvOS/Extensions/*'
+    cs.tvos.source_files = 'Source/iOS+tvOS/Extensions/*'
+    cs.osx.source_files = 'Sources/macOS/Extensions/*'
   end
 
   s.subspec 'Dequeue' do |cs|
