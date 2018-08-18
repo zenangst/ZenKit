@@ -44,9 +44,17 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'CollectionView' do |cs|
+    cs.dependency 'ZenKit/DataSource'
     cs.ios.source_files = 'Sources/iOS+tvOS/CollectionView/*'
     cs.tvos.source_files = 'Source/iOS+tvOS/CollectionView/*'
     cs.osx.source_files = 'Sources/macOS/CollectionView/*'
+  end
+
+  s.subspec 'DataSource' do |cs|
+    cs.dependency 'ZenKit/Injection'
+    cs.ios.source_files = 'Sources/iOS+tvOS/DataSource/*'
+    cs.tvos.source_files = 'Source/iOS+tvOS/DataSource/*'
+    cs.osx.source_files = 'Sources/macOS/DataSource/*'
   end
 
   s.subspec 'Extensions' do |cs|
@@ -68,10 +76,23 @@ Pod::Spec.new do |s|
     cs.osx.source_files = 'Sources/Shared/GrandCentralDispatch/*'
   end
 
+  s.subspec 'Injection' do |cs|
+    cs.ios.source_files = 'Sources/Shared/Injection/*'
+    cs.tvos.source_files = 'Sources/Shared/Injection/*'
+    cs.osx.source_files = 'Sources/Shared/Injection/*'
+  end
+
   s.subspec 'Operations' do |cs|
     cs.ios.source_files = 'Sources/Shared/Operations/*'
     cs.tvos.source_files = 'Sources/Shared/Operations/*'
     cs.osx.source_files = 'Sources/Shared/Operations/*'
+  end
+
+  s.subspec 'TableView' do |cs|
+    cs.dependency 'ZenKit/DataSource'
+    cs.ios.source_files = 'Sources/iOS+tvOS/TableView/*'
+    cs.tvos.source_files = 'Source/iOS+tvOS/TableView/*'
+    cs.osx.source_files = 'Sources/macOS/TableView/*'
   end
 
   s.subspec 'TypeAlias' do |cs|

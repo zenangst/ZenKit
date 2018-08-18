@@ -97,6 +97,28 @@
 		BD6F176320D8595900F9B48D /* DequeueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F176220D8595900F9B48D /* DequeueTests.swift */; };
 		BD6F176420D8595900F9B48D /* DequeueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F176220D8595900F9B48D /* DequeueTests.swift */; };
 		BD6F176520D8595900F9B48D /* DequeueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F176220D8595900F9B48D /* DequeueTests.swift */; };
+		BD7213B02128A5A1000385CF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213AF2128A5A1000385CF /* CollectionViewController.swift */; };
+		BD7213B12128A5A1000385CF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213AF2128A5A1000385CF /* CollectionViewController.swift */; };
+		BD7213B32128A5E3000385CF /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213B22128A5E3000385CF /* CollectionViewDataSource.swift */; };
+		BD7213B42128A5E3000385CF /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213B22128A5E3000385CF /* CollectionViewDataSource.swift */; };
+		BD7213B72128A6A1000385CF /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213B62128A6A1000385CF /* DataSource.swift */; };
+		BD7213B82128A6A1000385CF /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213B62128A6A1000385CF /* DataSource.swift */; };
+		BD7213B92128A6A1000385CF /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213B62128A6A1000385CF /* DataSource.swift */; };
+		BD7213BC2128A6F5000385CF /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213BB2128A6F5000385CF /* Injection.swift */; };
+		BD7213BD2128A6F5000385CF /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213BB2128A6F5000385CF /* Injection.swift */; };
+		BD7213BE2128A6F5000385CF /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213BB2128A6F5000385CF /* Injection.swift */; };
+		BD7213C22128A7D4000385CF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213C02128A7D4000385CF /* TableViewController.swift */; };
+		BD7213C32128A7D4000385CF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213C02128A7D4000385CF /* TableViewController.swift */; };
+		BD7213C42128A7D4000385CF /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213C12128A7D4000385CF /* TableViewDataSource.swift */; };
+		BD7213C52128A7D4000385CF /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213C12128A7D4000385CF /* TableViewDataSource.swift */; };
+		BD7213C72128A81B000385CF /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213C62128A81B000385CF /* UITableView+Extensions.swift */; };
+		BD7213C82128A81B000385CF /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213C62128A81B000385CF /* UITableView+Extensions.swift */; };
+		BD7213CA2128A92A000385CF /* DataSourceDriven.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213C92128A92A000385CF /* DataSourceDriven.swift */; };
+		BD7213CB2128A92A000385CF /* DataSourceDriven.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213C92128A92A000385CF /* DataSourceDriven.swift */; };
+		BD7213CC2128A92A000385CF /* DataSourceDriven.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213C92128A92A000385CF /* DataSourceDriven.swift */; };
+		BD7213CE2128A949000385CF /* Reloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213CD2128A949000385CF /* Reloadable.swift */; };
+		BD7213CF2128A949000385CF /* Reloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213CD2128A949000385CF /* Reloadable.swift */; };
+		BD7213D02128A949000385CF /* Reloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213CD2128A949000385CF /* Reloadable.swift */; };
 		BDB7BF4120C31E1D002F4E02 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */; };
 		BDB7BF4220C31E1D002F4E02 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */; };
 		BDB7BF4320C31E1D002F4E02 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */; };
@@ -220,6 +242,15 @@
 		BD6F175720D858E100F9B48D /* DequeueStringIdentifier+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DequeueStringIdentifier+String.swift"; sourceTree = "<group>"; };
 		BD6F175E20D8591A00F9B48D /* DequeueStringIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueStringIdentifier.swift; sourceTree = "<group>"; };
 		BD6F176220D8595900F9B48D /* DequeueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DequeueTests.swift; sourceTree = "<group>"; };
+		BD7213AF2128A5A1000385CF /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		BD7213B22128A5E3000385CF /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		BD7213B62128A6A1000385CF /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		BD7213BB2128A6F5000385CF /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		BD7213C02128A7D4000385CF /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		BD7213C12128A7D4000385CF /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		BD7213C62128A81B000385CF /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		BD7213C92128A92A000385CF /* DataSourceDriven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceDriven.swift; sourceTree = "<group>"; };
+		BD7213CD2128A949000385CF /* Reloadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reloadable.swift; sourceTree = "<group>"; };
 		BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		BDC070A221110F9C0008AE95 /* GrandCentralDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatch.swift; sourceTree = "<group>"; };
 		BDC070A6211118CA0008AE95 /* GrandCentralDispatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatchTests.swift; sourceTree = "<group>"; };
@@ -372,9 +403,9 @@
 		BD3BED4420D9380E00467A63 /* Codable */ = {
 			isa = PBXGroup;
 			children = (
-				BDCECD0420C072BB00589825 /* Result.swift */,
 				BDCECD0A20C072BB00589825 /* CodableData+Extensions.swift */,
 				BDCECD0720C072BB00589825 /* JSONDecoder+Extensions.swift */,
+				BDCECD0420C072BB00589825 /* Result.swift */,
 			);
 			path = Codable;
 			sourceTree = "<group>";
@@ -391,6 +422,8 @@
 		BD6F174920D8574300F9B48D /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				BD7213AF2128A5A1000385CF /* CollectionViewController.swift */,
+				BD7213B22128A5E3000385CF /* CollectionViewDataSource.swift */,
 				BD6F174A20D8576400F9B48D /* UICollectionView+Extensions.swift */,
 			);
 			path = CollectionView;
@@ -413,6 +446,34 @@
 				BD3BED3A20D9325C00467A63 /* DequeueError.swift */,
 			);
 			path = Dequeue;
+			sourceTree = "<group>";
+		};
+		BD7213B52128A693000385CF /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BD7213B62128A6A1000385CF /* DataSource.swift */,
+				BD7213C92128A92A000385CF /* DataSourceDriven.swift */,
+				BD7213CD2128A949000385CF /* Reloadable.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		BD7213BA2128A6E6000385CF /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				BD7213BB2128A6F5000385CF /* Injection.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		BD7213BF2128A7BF000385CF /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				BD7213C02128A7D4000385CF /* TableViewController.swift */,
+				BD7213C12128A7D4000385CF /* TableViewDataSource.swift */,
+				BD7213C62128A81B000385CF /* UITableView+Extensions.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		BDC070A121110F840008AE95 /* GrandCentralDispatch */ = {
@@ -581,6 +642,7 @@
 			isa = PBXGroup;
 			children = (
 				BD6F174920D8574300F9B48D /* CollectionView */,
+				BD7213BF2128A7BF000385CF /* TableView */,
 			);
 			path = "iOS+tvOS";
 			sourceTree = "<group>";
@@ -591,9 +653,11 @@
 				BDC4E46120E0D2F700A3B1A8 /* Algorithms */,
 				BD3BED4420D9380E00467A63 /* Codable */,
 				BD1F34BA21133B4100BD269D /* CoreData */,
+				BD7213B52128A693000385CF /* DataSource */,
 				BD6F175520D858D200F9B48D /* Dequeue */,
 				BDCECD0520C072BB00589825 /* Extensions */,
 				BDC070A121110F840008AE95 /* GrandCentralDispatch */,
+				BD7213BA2128A6E6000385CF /* Injection */,
 				BDCECD0B20C072BB00589825 /* Operations */,
 				BD6F175020D8589400F9B48D /* TypeAlias.swift */,
 				BD3BED4320D9380000467A63 /* UserDefaults */,
@@ -871,11 +935,14 @@
 				BD3BED3D20D9326700467A63 /* DequeueError.swift in Sources */,
 				BDCECD3C20C0740B00589825 /* Collection+Extensions.swift in Sources */,
 				BDCECD2320C072CE00589825 /* JSONDecoder+Extensions.swift in Sources */,
+				BD7213BE2128A6F5000385CF /* Injection.swift in Sources */,
+				BD7213B42128A5E3000385CF /* CollectionViewDataSource.swift in Sources */,
 				BD15F57D20C30FA200F9F0D5 /* UtilityOperation.swift in Sources */,
 				BDCECD2420C072CE00589825 /* UserDefaults+Extensions.swift in Sources */,
 				BDCECD2820C072CE00589825 /* UIOperation.swift in Sources */,
 				BDCECD2620C072CE00589825 /* CodableData+Extensions.swift in Sources */,
 				BD32581D20EB68FB0048352D /* Change.swift in Sources */,
+				BD7213CC2128A92A000385CF /* DataSourceDriven.swift in Sources */,
 				BD6F176120D8591A00F9B48D /* DequeueStringIdentifier.swift in Sources */,
 				BD3ED2A320E3C9F700252C64 /* Array+BinarySearch.swift in Sources */,
 				BD6F175D20D858E100F9B48D /* DequeueStringIdentifier+String.swift in Sources */,
@@ -883,20 +950,26 @@
 				BDC4E45720DC4BE500A3B1A8 /* BinarySearch.swift in Sources */,
 				BD6F175320D8589400F9B48D /* TypeAlias.swift in Sources */,
 				BDCECD2920C072CE00589825 /* CoreOperation.swift in Sources */,
+				BD7213D02128A949000385CF /* Reloadable.swift in Sources */,
 				BDCECD2720C072CE00589825 /* OperationController.swift in Sources */,
 				BD32581120EB68FB0048352D /* DiffManager.swift in Sources */,
 				BD67BD4320DAB66E00004E04 /* Dictionary+Extensions.swift in Sources */,
+				BD7213B12128A5A1000385CF /* CollectionViewController.swift in Sources */,
 				BD32580420EB68600048352D /* ONP.swift in Sources */,
 				BD11804E21136C6C00C793FA /* ManagedObjectManagerError.swift in Sources */,
 				BD145B0020C1125C000731EE /* Dispatchable.swift in Sources */,
+				BD7213B92128A6A1000385CF /* DataSource.swift in Sources */,
 				BD32581A20EB68FB0048352D /* Algorithm.swift in Sources */,
 				BD67BD4720DAB87200004E04 /* Data+Extensions.swift in Sources */,
 				BD3ED2A720E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */,
+				BD7213C52128A7D4000385CF /* TableViewDataSource.swift in Sources */,
 				BD32581720EB68FB0048352D /* IndexPathManager.swift in Sources */,
 				BD11805621136D2400C793FA /* ManagedObjectManager.swift in Sources */,
+				BD7213C82128A81B000385CF /* UITableView+Extensions.swift in Sources */,
 				BDC070A521110F9C0008AE95 /* GrandCentralDispatch.swift in Sources */,
 				BDCECD2220C072CE00589825 /* DispatchQueue+Extensions.swift in Sources */,
 				BD11805221136C8200C793FA /* NSManagedObject+Extensions.swift in Sources */,
+				BD7213C32128A7D4000385CF /* TableViewController.swift in Sources */,
 				BDCECD2520C072CE00589825 /* OperationQueue+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -935,11 +1008,14 @@
 				BD3BED3B20D9325C00467A63 /* DequeueError.swift in Sources */,
 				BDCECD3A20C0740B00589825 /* Collection+Extensions.swift in Sources */,
 				BDCECD1120C072CC00589825 /* JSONDecoder+Extensions.swift in Sources */,
+				BD7213BC2128A6F5000385CF /* Injection.swift in Sources */,
+				BD7213B32128A5E3000385CF /* CollectionViewDataSource.swift in Sources */,
 				BD15F57B20C30FA200F9F0D5 /* UtilityOperation.swift in Sources */,
 				BDCECD1220C072CC00589825 /* UserDefaults+Extensions.swift in Sources */,
 				BDCECD1620C072CC00589825 /* UIOperation.swift in Sources */,
 				BDCECD1420C072CC00589825 /* CodableData+Extensions.swift in Sources */,
 				BD32581B20EB68FB0048352D /* Change.swift in Sources */,
+				BD7213CA2128A92A000385CF /* DataSourceDriven.swift in Sources */,
 				BD6F175F20D8591A00F9B48D /* DequeueStringIdentifier.swift in Sources */,
 				BD3ED2A120E3C9F700252C64 /* Array+BinarySearch.swift in Sources */,
 				BD6F175B20D858E100F9B48D /* DequeueStringIdentifier+String.swift in Sources */,
@@ -947,20 +1023,26 @@
 				BDC4E45520DC4BE500A3B1A8 /* BinarySearch.swift in Sources */,
 				BD6F175120D8589400F9B48D /* TypeAlias.swift in Sources */,
 				BDCECD1720C072CC00589825 /* CoreOperation.swift in Sources */,
+				BD7213CE2128A949000385CF /* Reloadable.swift in Sources */,
 				BDCECD1520C072CC00589825 /* OperationController.swift in Sources */,
 				BD32580F20EB68FB0048352D /* DiffManager.swift in Sources */,
 				BD67BD4120DAB66E00004E04 /* Dictionary+Extensions.swift in Sources */,
+				BD7213B02128A5A1000385CF /* CollectionViewController.swift in Sources */,
 				BD32580220EB68600048352D /* ONP.swift in Sources */,
 				BD11804C21136C4D00C793FA /* ManagedObjectManagerError.swift in Sources */,
 				BD145AFE20C1125C000731EE /* Dispatchable.swift in Sources */,
+				BD7213B72128A6A1000385CF /* DataSource.swift in Sources */,
 				BD32581820EB68FB0048352D /* Algorithm.swift in Sources */,
 				BD67BD4520DAB87200004E04 /* Data+Extensions.swift in Sources */,
 				BD3ED2A520E3D98700252C64 /* Array+InterpolationSearch.swift in Sources */,
+				BD7213C42128A7D4000385CF /* TableViewDataSource.swift in Sources */,
 				BD32581520EB68FB0048352D /* IndexPathManager.swift in Sources */,
 				BD11805421136D2400C793FA /* ManagedObjectManager.swift in Sources */,
+				BD7213C72128A81B000385CF /* UITableView+Extensions.swift in Sources */,
 				BDC070A321110F9C0008AE95 /* GrandCentralDispatch.swift in Sources */,
 				BDCECD1020C072CC00589825 /* DispatchQueue+Extensions.swift in Sources */,
 				BD11805021136C8200C793FA /* NSManagedObject+Extensions.swift in Sources */,
+				BD7213C22128A7D4000385CF /* TableViewController.swift in Sources */,
 				BDCECD1320C072CC00589825 /* OperationQueue+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -993,6 +1075,7 @@
 				BD32582220EB68FB0048352D /* TableEntry.swift in Sources */,
 				BDF5358F212358B2007B6E26 /* CoreDataController.swift in Sources */,
 				BD1F34BD21133B5300BD269D /* NSManagedObjectContext+Extensions.swift in Sources */,
+				BD7213CF2128A949000385CF /* Reloadable.swift in Sources */,
 				BDC4E46520E0D31600A3B1A8 /* InterpolationSearch.swift in Sources */,
 				BD32581320EB68FB0048352D /* ArrayEntry.swift in Sources */,
 				BD3BED4120D9341900467A63 /* View+Extensions.swift in Sources */,
@@ -1005,13 +1088,16 @@
 				BDCECD1D20C072CD00589825 /* CodableData+Extensions.swift in Sources */,
 				BD145AFA20C11143000731EE /* DispatchOperation.swift in Sources */,
 				BD32581C20EB68FB0048352D /* Change.swift in Sources */,
+				BD7213CB2128A92A000385CF /* DataSourceDriven.swift in Sources */,
 				BD6F176020D8591A00F9B48D /* DequeueStringIdentifier.swift in Sources */,
 				BD3ED2A220E3C9F700252C64 /* Array+BinarySearch.swift in Sources */,
 				BD6F175C20D858E100F9B48D /* DequeueStringIdentifier+String.swift in Sources */,
+				BD7213BD2128A6F5000385CF /* Injection.swift in Sources */,
 				BDCECD2020C072CD00589825 /* CoreOperation.swift in Sources */,
 				BDC4E45620DC4BE500A3B1A8 /* BinarySearch.swift in Sources */,
 				BD6F175220D8589400F9B48D /* TypeAlias.swift in Sources */,
 				BDCECD1E20C072CD00589825 /* OperationController.swift in Sources */,
+				BD7213B82128A6A1000385CF /* DataSource.swift in Sources */,
 				BD145AFF20C1125C000731EE /* Dispatchable.swift in Sources */,
 				BD32581020EB68FB0048352D /* DiffManager.swift in Sources */,
 				BD67BD4220DAB66E00004E04 /* Dictionary+Extensions.swift in Sources */,
