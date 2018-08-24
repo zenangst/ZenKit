@@ -17,11 +17,11 @@ open class CoreOperation: Operation {
     return _finished
   }
 
-  func executing(_ executing: Bool) {
+  public func executing(_ executing: Bool) {
     _executing = executing
   }
 
-  func finish(_ finished: Bool) {
+  public func finish(_ finished: Bool) {
     _finished = finished
   }
 }
