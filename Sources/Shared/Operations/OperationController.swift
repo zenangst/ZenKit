@@ -5,6 +5,8 @@ public class OperationController<T: Operation> {
   private let _operationQueue: OperationQueue
   private var _operations = [T]()
 
+  public var isExecuting: Bool { return _operationQueue.operations.isNotEmpty }
+
   public init(operationQueue: OperationQueue = .init(maxConcurrentOperationCount: 1) ) {
     self._operationQueue = operationQueue
   }
