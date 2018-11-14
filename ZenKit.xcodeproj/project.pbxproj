@@ -61,6 +61,9 @@
 		BD32582620EB71200048352D /* DiffAlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32582520EB71200048352D /* DiffAlgorithmsTests.swift */; };
 		BD32582720EB71200048352D /* DiffAlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32582520EB71200048352D /* DiffAlgorithmsTests.swift */; };
 		BD32582820EB71200048352D /* DiffAlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32582520EB71200048352D /* DiffAlgorithmsTests.swift */; };
+		BD35A997219C06CB0020B986 /* Dictionary+KeyPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD35A996219C06CB0020B986 /* Dictionary+KeyPathTests.swift */; };
+		BD35A998219C06CB0020B986 /* Dictionary+KeyPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD35A996219C06CB0020B986 /* Dictionary+KeyPathTests.swift */; };
+		BD35A999219C06CB0020B986 /* Dictionary+KeyPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD35A996219C06CB0020B986 /* Dictionary+KeyPathTests.swift */; };
 		BD3BED3B20D9325C00467A63 /* DequeueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BED3A20D9325C00467A63 /* DequeueError.swift */; };
 		BD3BED3C20D9326600467A63 /* DequeueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BED3A20D9325C00467A63 /* DequeueError.swift */; };
 		BD3BED3D20D9326700467A63 /* DequeueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BED3A20D9325C00467A63 /* DequeueError.swift */; };
@@ -119,6 +122,9 @@
 		BD7213CE2128A949000385CF /* Reloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213CD2128A949000385CF /* Reloadable.swift */; };
 		BD7213CF2128A949000385CF /* Reloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213CD2128A949000385CF /* Reloadable.swift */; };
 		BD7213D02128A949000385CF /* Reloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7213CD2128A949000385CF /* Reloadable.swift */; };
+		BD981375219C051100BEBAC9 /* Dictionary+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD981374219C051100BEBAC9 /* Dictionary+KeyPath.swift */; };
+		BD981376219C051100BEBAC9 /* Dictionary+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD981374219C051100BEBAC9 /* Dictionary+KeyPath.swift */; };
+		BD981377219C051100BEBAC9 /* Dictionary+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD981374219C051100BEBAC9 /* Dictionary+KeyPath.swift */; };
 		BDB7BF4120C31E1D002F4E02 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */; };
 		BDB7BF4220C31E1D002F4E02 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */; };
 		BDB7BF4320C31E1D002F4E02 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */; };
@@ -228,6 +234,7 @@
 		BD32580D20EB68FB0048352D /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		BD32580E20EB68FB0048352D /* TableEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableEntry.swift; sourceTree = "<group>"; };
 		BD32582520EB71200048352D /* DiffAlgorithmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffAlgorithmsTests.swift; sourceTree = "<group>"; };
+		BD35A996219C06CB0020B986 /* Dictionary+KeyPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+KeyPathTests.swift"; sourceTree = "<group>"; };
 		BD3BED3A20D9325C00467A63 /* DequeueError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueError.swift; sourceTree = "<group>"; };
 		BD3BED3E20D9337600467A63 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		BD3BED4220D9352500467A63 /* ZenKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = ZenKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -251,6 +258,7 @@
 		BD7213C62128A81B000385CF /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		BD7213C92128A92A000385CF /* DataSourceDriven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceDriven.swift; sourceTree = "<group>"; };
 		BD7213CD2128A949000385CF /* Reloadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reloadable.swift; sourceTree = "<group>"; };
+		BD981374219C051100BEBAC9 /* Dictionary+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+KeyPath.swift"; sourceTree = "<group>"; };
 		BDB7BF4020C31E1D002F4E02 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		BDC070A221110F9C0008AE95 /* GrandCentralDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatch.swift; sourceTree = "<group>"; };
 		BDC070A6211118CA0008AE95 /* GrandCentralDispatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatchTests.swift; sourceTree = "<group>"; };
@@ -476,6 +484,14 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		BD981373219C04F300BEBAC9 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				BD981374219C051100BEBAC9 /* Dictionary+KeyPath.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
 		BDC070A121110F840008AE95 /* GrandCentralDispatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,6 +579,7 @@
 			children = (
 				BD1F34BF21133C7200BD269D /* CoreDataTests.swift */,
 				BD6F176220D8595900F9B48D /* DequeueTests.swift */,
+				BD35A996219C06CB0020B986 /* Dictionary+KeyPathTests.swift */,
 				BD32582520EB71200048352D /* DiffAlgorithmsTests.swift */,
 				BDC070A6211118CA0008AE95 /* GrandCentralDispatchTests.swift */,
 				BDCECD3320C072EB00589825 /* OperationsTests.swift */,
@@ -655,6 +672,7 @@
 				BD1F34BA21133B4100BD269D /* CoreData */,
 				BD7213B52128A693000385CF /* DataSource */,
 				BD6F175520D858D200F9B48D /* Dequeue */,
+				BD981373219C04F300BEBAC9 /* Dictionary */,
 				BDCECD0520C072BB00589825 /* Extensions */,
 				BDC070A121110F840008AE95 /* GrandCentralDispatch */,
 				BD7213BA2128A6E6000385CF /* Injection */,
@@ -947,6 +965,7 @@
 				BD3ED2A320E3C9F700252C64 /* Array+BinarySearch.swift in Sources */,
 				BD6F175D20D858E100F9B48D /* DequeueStringIdentifier+String.swift in Sources */,
 				BD145AFB20C11143000731EE /* DispatchOperation.swift in Sources */,
+				BD981377219C051100BEBAC9 /* Dictionary+KeyPath.swift in Sources */,
 				BDC4E45720DC4BE500A3B1A8 /* BinarySearch.swift in Sources */,
 				BD6F175320D8589400F9B48D /* TypeAlias.swift in Sources */,
 				BDCECD2920C072CE00589825 /* CoreOperation.swift in Sources */,
@@ -984,6 +1003,7 @@
 				BDC070A9211118CA0008AE95 /* GrandCentralDispatchTests.swift in Sources */,
 				BD1F34C221133C7200BD269D /* CoreDataTests.swift in Sources */,
 				BD2E1B9F20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */,
+				BD35A999219C06CB0020B986 /* Dictionary+KeyPathTests.swift in Sources */,
 				BDCECD3520C072EB00589825 /* OperationsTests.swift in Sources */,
 				BDB7BF4320C31E1D002F4E02 /* UserDefaults.swift in Sources */,
 				D284B1441F7908B100D94AF3 /* SharedTests.swift in Sources */,
@@ -1020,6 +1040,7 @@
 				BD3ED2A120E3C9F700252C64 /* Array+BinarySearch.swift in Sources */,
 				BD6F175B20D858E100F9B48D /* DequeueStringIdentifier+String.swift in Sources */,
 				BD145AF920C11143000731EE /* DispatchOperation.swift in Sources */,
+				BD981375219C051100BEBAC9 /* Dictionary+KeyPath.swift in Sources */,
 				BDC4E45520DC4BE500A3B1A8 /* BinarySearch.swift in Sources */,
 				BD6F175120D8589400F9B48D /* TypeAlias.swift in Sources */,
 				BDCECD1720C072CC00589825 /* CoreOperation.swift in Sources */,
@@ -1061,6 +1082,7 @@
 				BD1F34C021133C7200BD269D /* CoreDataTests.swift in Sources */,
 				BD2E1B9D20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */,
 				BD6F176320D8595900F9B48D /* DequeueTests.swift in Sources */,
+				BD35A997219C06CB0020B986 /* Dictionary+KeyPathTests.swift in Sources */,
 				D284B1471F7908B800D94AF3 /* iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1094,6 +1116,7 @@
 				BD6F175C20D858E100F9B48D /* DequeueStringIdentifier+String.swift in Sources */,
 				BD7213BD2128A6F5000385CF /* Injection.swift in Sources */,
 				BDCECD2020C072CD00589825 /* CoreOperation.swift in Sources */,
+				BD981376219C051100BEBAC9 /* Dictionary+KeyPath.swift in Sources */,
 				BDC4E45620DC4BE500A3B1A8 /* BinarySearch.swift in Sources */,
 				BD6F175220D8589400F9B48D /* TypeAlias.swift in Sources */,
 				BDCECD1E20C072CD00589825 /* OperationController.swift in Sources */,
@@ -1126,6 +1149,7 @@
 				BDC070A8211118CA0008AE95 /* GrandCentralDispatchTests.swift in Sources */,
 				BD1F34C121133C7200BD269D /* CoreDataTests.swift in Sources */,
 				BD2E1B9E20E2B3BB0042511E /* XCTestCase+Benchmark.swift in Sources */,
+				BD35A998219C06CB0020B986 /* Dictionary+KeyPathTests.swift in Sources */,
 				BDCECD3620C072EB00589825 /* OperationsTests.swift in Sources */,
 				BDB7BF4220C31E1D002F4E02 /* UserDefaults.swift in Sources */,
 				D284B1451F7908B200D94AF3 /* SharedTests.swift in Sources */,

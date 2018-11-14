@@ -8,6 +8,6 @@ public extension DispatchQueue {
   }
 
   public func wrap(_ closure: Closure? = nil) -> Closure {
-    return { self.sync { closure?() } }
+    return { self.async { closure?() } }
   }
 }

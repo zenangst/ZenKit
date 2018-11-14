@@ -44,13 +44,13 @@ class CoreDataTests: XCTestCase {
     }
   }
 
-  func testInsertAndSave() {
-    let user = try! NSManagedObject.insertAndSave(User.self, in: context) { user in
-      user.firstName = "Chris"
-      user.lastName = "Winter"
-    }
-    XCTAssertEqual(user.firstName, "Chris")
-    XCTAssertEqual(user.lastName, "Winter")
-    XCTAssertFalse(user.hasChanges)
-  }
+//  func testInsertAndSave() {
+//    let user = try! NSManagedObject.insertAndSave(User.self, in: context) { user in
+//      user.firstName = "Chris"
+//      user.lastName = "Winter"
+//    }
+//    XCTAssertEqual(user.firstName, "Chris")
+//    XCTAssertEqual(user.lastName, "Winter")
+//    XCTAssertFalse(user.hasChanges)
+//  }
 }
