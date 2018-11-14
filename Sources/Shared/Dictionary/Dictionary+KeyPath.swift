@@ -54,6 +54,11 @@ public extension Dictionary {
     }
   }
 
+  public func enumFor<T: RawRepresentable>(keyPath: String) -> T? {
+    guard let value = self[keyPath: keyPath] as? T.RawValue else { return nil }
+    return T(rawValue: value)
+  }
+
   public func valueFor<T>(keyPath: String) -> T? {
     return self[keyPath: keyPath] as? T
   }

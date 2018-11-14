@@ -56,4 +56,24 @@ class Dictionary_ExtensionsTests: XCTestCase {
     XCTAssertEqual(dictionary.valueFor(keyPath: "foo.bar.baz.1"), 2)
     XCTAssertEqual(dictionary.valueFor(keyPath: "foo.bar.baz.2"), 3)
   }
+
+  func testEnumForKeyPath() {
+    enum MockEnum: Int {
+      case foo = 1
+      case bar = 2
+      case baz = 3
+    }
+
+    let dictionary: [String: Any] = [
+      "foo" : [
+        "bar" : [
+          "baz" : [1,2,3]
+        ]
+      ]
+    ]
+
+    XCTAssertEqual(dictionary.enumFor(keyPath: "foo.bar.baz.0"), MockEnum.foo)
+    XCTAssertEqual(dictionary.enumFor(keyPath: "foo.bar.baz.1"), MockEnum.baz)
+    XCTAssertEqual(dictionary.enumFor(keyPath: "foo.bar.baz.2"), MockEnum.baz)
+  }
 }
