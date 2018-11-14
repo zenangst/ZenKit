@@ -73,7 +73,7 @@ class Dictionary_ExtensionsTests: XCTestCase {
     ]
 
     XCTAssertEqual(dictionary.enumFor(keyPath: "foo.bar.baz.0"), MockEnum.foo)
-    XCTAssertEqual(dictionary.enumFor(keyPath: "foo.bar.baz.1"), MockEnum.baz)
+    XCTAssertEqual(dictionary.enumFor(keyPath: "foo.bar.baz.1"), MockEnum.bar)
     XCTAssertEqual(dictionary.enumFor(keyPath: "foo.bar.baz.2"), MockEnum.baz)
   }
 }
