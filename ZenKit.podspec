@@ -109,5 +109,5 @@ Pod::Spec.new do |s|
     cs.osx.source_files = 'Sources/Shared/UserDefaults'
   end
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 end

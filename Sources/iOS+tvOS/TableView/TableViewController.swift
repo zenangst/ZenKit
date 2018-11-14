@@ -1,11 +1,14 @@
 import UIKit
 
 open class TableViewController: UITableViewController {
+  let cells: [UITableViewCell.Type]
   let dataSource: UITableViewDataSource
   let configuration: (UITableView) -> Void
 
-  public init(dataSource: UITableViewDataSource,
-       configuration: @escaping (UITableView) -> Void) {
+  public init(cells: [UITableViewCell.Type],
+              dataSource: UITableViewDataSource,
+              configuration: @escaping (UITableView) -> Void) {
+    self.cells = cells
     self.dataSource = dataSource
     self.configuration = configuration
     super.init(nibName: nil, bundle: nil)
@@ -19,6 +22,9 @@ open class TableViewController: UITableViewController {
 
   override open func viewDidLoad() {
     super.viewDidLoad()
+    cells.forEach {
+      tableView.register($0, forCellReuseIdentifier: String(describing: $0))
+    }
     configuration(tableView)
     tableView.dataSource = dataSource
   }
