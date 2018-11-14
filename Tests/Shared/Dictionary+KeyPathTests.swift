@@ -76,4 +76,19 @@ class Dictionary_ExtensionsTests: XCTestCase {
     XCTAssertEqual(dictionary.enumFor(keyPath: "foo.bar.baz.1"), MockEnum.bar)
     XCTAssertEqual(dictionary.enumFor(keyPath: "foo.bar.baz.2"), MockEnum.baz)
   }
+
+  func testUrlForKeyPath() {
+    let dictionary: [String: Any] = [
+      "urls" : [
+        "https://www.nrk.no",
+        "not a url"
+      ]
+    ]
+
+    XCTAssertEqual(dictionary.urlFor(keyPath: "urls.0"),
+                   URL(string: "https://www.nrk.no"))
+    XCTAssertEqual(dictionary.urlFor(keyPath: "urls.1"),
+                   nil)
+
+  }
 }

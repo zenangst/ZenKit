@@ -1,3 +1,5 @@
+import Foundation
+
 public extension Dictionary {
   subscript(keyPath keyPath: String) -> Any? {
     get {
@@ -61,5 +63,14 @@ public extension Dictionary {
 
   public func valueFor<T>(keyPath: String) -> T? {
     return self[keyPath: keyPath] as? T
+  }
+
+  public func urlFor(keyPath: String) -> URL? {
+    guard let urlString = self[keyPath: keyPath] as? String,
+      let url = URL(string: urlString) else {
+      return nil
+    }
+
+    return url
   }
 }
